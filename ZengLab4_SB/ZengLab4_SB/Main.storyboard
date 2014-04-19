@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VF2-Sd-Qd4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Normal View Controller-->
+        <scene sceneID="7gG-tP-ehe">
+            <objects>
+                <viewController id="aQe-Al-yOY" customClass="LZNormalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AZU-Dt-opM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuE-QN-vCC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F4E-8C-1vx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lab4_SB Created By Li Zeng " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O6-KC-dIl">
+                                <rect key="frame" x="37" y="122" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="ypg-QI-sOn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M78-GY-Roh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="-351"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="I6c-NZ-bBw">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="VF2-Sd-Qd4" customClass="LZTabViewController" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Gsl-hu-9Nh">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aQe-Al-yOY" kind="relationship" relationship="viewControllers" id="3uX-f7-Bal"/>
+                        <segue destination="lS4-2f-Qcp" kind="relationship" relationship="viewControllers" id="rOZ-D6-mXJ"/>
+                        <segue destination="gKb-6L-Cq1" kind="relationship" relationship="viewControllers" id="dkU-3w-jpu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbU-ay-e0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="-24"/>
+        </scene>
+        <!--First View Controller - First View Controller-->
+        <scene sceneID="DNv-34-2pC">
+            <objects>
+                <viewController storyboardIdentifier="firstVC" title="First View Controller" id="vI6-7Q-96Q" customClass="LZFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzR-Sy-CUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hKa-47-owC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpX-Mz-grH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzj-z7-D5v">
+                                <rect key="frame" x="145" y="269" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PUSH">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ytd-8p-NMD" kind="push" identifier="naviBtn" id="mgq-LL-L6W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kqS-Y1-EMj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4E-1G-nd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="1024"/>
+        </scene>
+        <!--Second View Controller - Second View Controller-->
+        <scene sceneID="H4Z-Nt-fj3">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" title="Second View Controller" id="ytd-8p-NMD" customClass="LZSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JRA-cQ-r4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="HJP-Yo-gh1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fCB-4B-p1n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The &quot;PUSH&quot; View Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zr-vF-YEX">
+                                <rect key="frame" x="52" y="273" width="216" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Ee-q7-Jhi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pf7-25-VQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="1024"/>
+        </scene>
+        <!--Nav View Controller-->
+        <scene sceneID="ivr-Qc-V7u">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="gKb-6L-Cq1" customClass="LZNavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="o41-L8-Ii8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1qf-E5-2FQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vI6-7Q-96Q" kind="relationship" relationship="rootViewController" id="R0l-fJ-1mF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob0-6G-rHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="1024"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Zqe-E8-AHC">
+            <objects>
+                <viewController id="lS4-2f-Qcp" customClass="LZTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oST-fQ-yxa"/>
+                        <viewControllerLayoutGuide type="bottom" id="V65-1S-g5B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6wT-od-xiN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="xzg-sA-liU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbj-em-oKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="302"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
